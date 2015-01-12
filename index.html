@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=480">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" media="screen" href="/style.css">
+<link rel="alternate" type="application/rss+xml" title="Sandstorm Blog" href="/feed.xml">
+<meta property="og:title" content="Sandstorm News">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://sandstorm.io/logo-bw.png">
+<meta property="og:url" content="https://blog.sandstorm.io">
+<meta property="og:description" content="Latest updates on Sandstorm.io.">
+<meta name="description" content="Latest updates on Sandstorm.io.">
+<title>Sandstorm News</title>
+</head>
+<body>
+<header>
+<a id="logo" href="/"></a>
+<h1><a href="/">Sandstorm News</a></h1>
+<p>Latest updates on <a href="https://sandstorm.io">Sandstorm.io</a></p>
+</header>
+<section>
+<h2><a href="/./news/2015-01-07-asheesh-and-irc.html">Introducing Asheesh and our new IRC channel</a></h2>
+<p class="post-details">By <a href="https://github.com/paulproteus">Asheesh Laroia</a> -
+<a href="/./news/2015-01-07-asheesh-and-irc.html">07 Jan 2015</a>
+<p>I’m Asheesh Laroia, and I’m excited to say I’m joining Sandstorm as a member of the technical staff.</p>
+<p>For most of my career, I’ve worked in open source: I’ve been a software engineer at Creative Commons, and I co-founded OpenHatch, a non-profit that helps people get involved in open source. I got my start in open source by reporting a bug against a Linux filesystem check tool, made my first visible contribution in 2003 when I created the Xbox-Linux wiki, and I mentor others as a Developer in Debian. I did a one-year stint in web startup-land to hone my security knowledge, and now I find myself in the coolest possible position: working at Sandstorm on tools and community to build the easiest, most secure system ever to run a personal server.</p>
+<p>Personal servers mean a lot to me. I’ve been running one since 2001; in 2006, I found a way to move it out of my parents’ basement into friend’s apartment in Tokyo (that’s another story). I’ve been through it all – RAID failures, difficult package upgrades, and getting compromised – for the pride of knowing I’m running my own real Internet site, so it’s amazing to be working on Sandstorm’s mission of creating the easiest way to run a personal server.</p>
+<p>I first heard about Sandstorm when Kenton visited San Francisco to discuss it with me and get my feedback. We talked about about what Sandstorm can learn from efforts like Freedombox, and I was impressed to discover that the Sandstorm vision seemed to be ahead of my own thinking. So last summer, I came to the Sandstorm Hackathon (app port-a-thon), and rather than port an app, I added a <a href="https://github.com/sandstorm-io/sandstorm/blob/master/Vagrantfile">Vagrantfile</a> to make it easier to port apps to Sandstorm from a Mac. You might have seen me talk about it in the video for the <a href="https://www.indiegogo.com/projects/sandstorm-io-personal-cloud-platform">Indiegogo campaign</a>.</p>
+<p>Sandstorm’s mission has two pillars: the codebase, and the community, and I’m lucky to be working on both. As my first act, I’ve given us an IRC channel. Come find me in #sandstorm on freenode as “paulproteus” – ping me about parts that need improvement, or about how to get involved. If you already have a client, great – join in! And if you don’t, visit us via this <a href="https://kiwiirc.com/client/irc.freenode.net/?channel=#sandstorm">web chat link</a> and say hello! I’m looking forward to meeting all of you.</p>
+</section>
+<section>
+<h2><a href="/./news/2014-12-15-capnproto-0.5.html">Cap'n Proto 0.5, and how it is central to Sandstorm</a></h2>
+<p class="post-details">By <a href="https://github.com/kentonv">Kenton Varda</a> -
+<a href="/./news/2014-12-15-capnproto-0.5.html">15 Dec 2014</a>
+<p><a href="https://capnproto.org">Cap’n Proto</a> is an open source serialization and RPC protocol being developed as part of the Sandstorm project. Today, we’ve <a href="https://capnproto.org/news/2014-12-15-capnproto-0.5-generics-msvc-java-csharp.html">released version 0.5</a> of Cap’n Proto with lots of goodies, including new features like generics and support for additional compilers and languages like Visual C++, Java, and C#. Much of the work comes from a large number of awesome open source contributors.</p>
+<p>So, what does this have to do with Sandstorm?</p>
+<div><div style='float:right; text-align: center; width: 50%'><img src='https://kentonv.github.io/capnproto/images/infinity-times-faster.png'/><br/><img src='https://kentonv.github.io/capnproto/images/time-travel.png' style='width: 100%'/></div></div>
+<p>Many developers are excited by Cap’n Proto for being “like Google’s Protocol Buffers, except infinity times faster”. When it comes to Sandstorm, though, the design of Cap’n Proto’s RPC system is far more important than the speed of its encoding. Sandstorm is a <a href="http://www.erights.org/elib/capability/overview.html">capability system</a>: applications can send each other object references and address messages to those objects. Messages can themselves contain new object references, and the recipient implicitly gains permission to use any object reference they receive. Essentially, Sandstorm allows the interfaces between two apps, or between and app and the platform, to be designed using the same vocabulary as interfaces between objects or libraries in an object-oriented programming language (but <a href="https://capnproto.org/rpc.html#distributed-objects">without the mistakes of CORBA or DCOM</a>). Cap’n Proto RPC is at the core of this.</p>
+<p>This has powerful implications: Consider the case of service discovery. On Sandstorm, all applications start out isolated from each other in secure containers. However, applications can (or, will be able to) publish Cap’n Proto object references to the system representing APIs they support. Then, another app can make a request to the system, saying “I need an object that implements interface Foo”. At this point, the system can display a picker UI to the user, presenting all objects the user owns that satisfy the requirement. However, the requesting app only ever receives a reference to the object the user chooses; all others remain hidden. Thus, security becomes “automatic”. The user does not have to edit an ACL on the providing app, nor copy around credentials, nor even answer any security question at all; it all derives automatically and naturally from the user’s choices. We call this interface “The Powerbox”.</p>
+<p>Moreover, because Sandstorm is fully aware of the object references held by every app, it will be able to display a visualization of these connections, allowing a user to quickly see which of their apps have access to each other and even revoke connections that are no longer desired with a mouse click.</p>
+<p>Cap’n Proto 0.5 introduces primitives to support “persistent” capabilities – that is, the ability to “save” an object reference to disk and then restore it later, on a different connection. Obviously, the features described above totally depend on this feature.</p>
+<p>The next release of Cap’n Proto is likely to include another feature essential for Sandstorm: the ability to pass capabilities from machine to machine and have Cap’n Proto automatically form direct connections when you do. This allows servers running on different machines to interact with each other in a completely object-oriented way. Instead of passing around URLs (which necessitate a global namespace, lifetime management, firewall traversal, and all sorts of other obstacles), you can pass around capabilities and not worry about it. This will be central to Sandstorm’s strategies for federation and cluster management.</p>
+</section>
+<section>
+<h2><a href="/./news/2014-11-05-mobile-strategy.html">How Sandstorm works on mobile; plus app updates</a></h2>
+<p class="post-details">By <a href="https://github.com/kentonv">Kenton Varda</a> -
+<a href="/./news/2014-11-05-mobile-strategy.html">05 Nov 2014</a>
+<p>Today we have a few announcements regarding Sandstorm and mobile.</p>
+<p>First, we’ve updated Sandstorm’s web interface to be mobile-friendly. Whereas before the UI was mostly unusable on mobile, now you should be able to get around reasonably well. Not all of our apps are optimized for mobile, but at least now that the Sandstorm shell works well, apps can follow.</p>
+<div style='background-color: #ddd; padding: 10px;'><img src='https://sandstorm.io/mobile1.png' style='width: 48%'/>&nbsp;<img src='https://sandstorm.io/mobile2.png' style='width: 48%; float:right;'/></div>
+<p>Second, we’ve implement the ability for applications to export HTTP-based APIs, which among other things can be used to allow a mobile client application to access a Sandstorm-based server. To learn how to make your own application export an API, check out <a href="https://github.com/sandstorm-io/sandstorm/wiki/Exporting-HTTP-APIs">the documentation</a>.</p>
+<h3 id="tinytinyrss_android_app">TinyTinyRSS Android app</h3>
+<p>As an example of the new functionality, we’ve updated our port of TinyTinyRSS to support an Android client. Install the latest version of the TinyTinyRSS app and check out the preferences to learn more!</p>
+<h3 id="telescope">Telescope</h3>
+<p>We’ve ported <a href="http://telesc.pe">Telescope</a> – a Reddit / Hacker News clone – to Sandstorm; find it in the Sandstorm app list now. Being a Meteor app, Telescope was, of course, easy to port using <a href="https://github.com/sandstorm-io/meteor-spk">meteor-spk</a>.</p>
+<p>We are using Telescope to power the Sandstorm app committee voting app, where those people who purchased seats on the app committee during our Indiegogo campaign have been voting on the next apps for us to port. So far, they have chosen Gitlab and Diaspora.</p>
+<p><img src='https://sandstorm.io/gitlab-diaspora.png' style='width: 100%'/></p>
+<p>Want to follow the action? Visit the <a href="https://groups.google.com/group/sandstorm-app-committee">app committee group</a>.</p>
+<h3 id="groovebasin_update">Groovebasin Update</h3>
+<p>We’ve updated the Groovebasin app to allow batch uploads of multiple songs. (This was previously disabled due to a limitation in Sandstorm, which we’ve now fixed.) Re-install Groovebasin from the Sandstorm app list to get the update. Now you can upload your whole music library more easily!</p>
+</section>
+<section>
+<h2><a href="/./news/2014-10-09-app-updates.html">App updates and more</a></h2>
+<p class="post-details">By <a href="https://github.com/kentonv">Kenton Varda</a> -
+<a href="/./news/2014-10-09-app-updates.html">09 Oct 2014</a>
+<p>It’s been a while since our last post, but we’ve been doing a ton of stuff. It’s been a mad scramble here at Sandstorm HQ to get things organized after our <a href="http://igg.me/at/sandstorm">successful crowdfunding campaign</a>. Let me fill you in on some of the things we’ve been doing!</p>
+<h3 id="app_updates">App Updates</h3>
+<p>The Sandstorm app list now stands at 20 apps. While we will continue adding more, it’s also important to keep the ones we have up to date. To that end, today we’ve pushed updates to several apps which have seen upstream changes since our original releases:</p>
+<ul>
+<li>Ghost</li>
+<li>Wave</li>
+<li>Mediagoblin</li>
+<li>Tiny Tiny RSS</li>
+<li>EtherCalc</li>
+</ul>
+<p>We have more updates coming soon, including Mailpile, Groovebasin, and ShareLaTeX.</p>
+<p>We are also excited to say that our EtherCalc port will henceforth be directly maintained by the upstream maintainer, Audrey Tang.</p>
+<p>We don’t have automatic “push” updates yet (they’re coming), so to update your copy of a Sandstorm app, you must go to the <a href="https://sandstorm.io/apps">app list</a> and install it again. Sandstorm will recognize that you’re installing an update and will upgrade your existing files.</p>
+<h3 id="meeting_notes">Meeting Notes</h3>
+<p>Curious to see what’s going on with Sandstorm on a day-to-day basis? We have started posting our daily meeting notes to the <a href="https://groups.google.com/group/sandstorm-dev">Sandstorm dev list</a>. Feel free to subscribe for updates. (And yes, we do hope to move the mailing list to a Sandstorm app as soon as we have one. ;) )</p>
+<h3 id="app_committee">App Committee</h3>
+<p>The App Committee will begin voting on new Sandstorm Apps soon. You can follow the action on the <a href="groups.google.com/group/sandstorm-app-committee">App Committee group</a> (but only committee members can post there).</p>
+<h3 id="apis">APIs</h3>
+<p>Sandstorm recently gained the ability to host apps which expose APIs. This means that it’s now possible to do things like have a mobile client app which talks to your Sandstorm server. We will soon be updating some of our existing apps to take advantage of this feature, at which point we’ll do a larger announcement. Check out the <a href="https://groups.google.com/d/msg/sandstorm-dev/7D6R5kDSyRw/jvDP5Br7AgwJ">sandstorm-dev post</a> for details.</p>
+<h3 id="perk_fulfillment">Perk fulfillment</h3>
+<p><strong>Credits:</strong> Everyone who contributed and who responded to our questionnaire is now named in the <a href="https://demo.sandstorm.io/about">Sandstorm about page</a> and on <a href="https://sandstorm.io">our home page</a>. If you contributed but missed the questionnaire we sent out, please <a href="mailto:support@sandstorm.io">e-mail us</a> to let us know how you want your name to appear.</p>
+<p><strong>Stickers and t-shirts:</strong> We’ve collected everyone’s shipping addresses and t-shirt sizes and will be shipping these out soon. It took a little longer than expected to get everyone to respond, but we’ve now passed the info off to the fulfillment company and expect these to ship within the next five weeks or so.</p>
+</section>
+<section>
+<h2><a href="/./news/2014-08-31-last-day.html">Last day to contribute to Sandstorm</a></h2>
+<p class="post-details">By <a href="https://github.com/kentonv">Kenton Varda</a> -
+<a href="/./news/2014-08-31-last-day.html">31 Aug 2014</a>
+<p>There’s just a few hours left in our campaign, which wraps up at midnight tonight (Pacific time). This is your last chance to grab <a href="https://www.indiegogo.com/projects/sandstorm-io-personal-cloud-platform/contributions/new?perk_amt=8&perk_id=2166937">some stickers</a>, <a href="https://www.indiegogo.com/projects/sandstorm-io-personal-cloud-platform/contributions/new?perk_amt=32&perk_id=2166959">a t-shirt</a>, <a href="https://www.indiegogo.com/projects/sandstorm-io-personal-cloud-platform/contributions/new?perk_amt=64&perk_id=2166961">hosting</a>, or a <a href="https://www.indiegogo.com/projects/sandstorm-io-personal-cloud-platform/contributions/new?perk_amt=512&perk_id=2167013">LAN party invite</a>. Starting tomorrow we’ll be heads-down coding, so you won’t be hearing from us quite so often. ;)</p>
+<p>We’d like to take a moment to thank our <a href="https://www.indiegogo.com/projects/sandstorm-io-personal-cloud-platform/contributions/new?perk_amt=2048&perk_id=2219065">Key Individual</a> and <a href="https://www.indiegogo.com/projects/sandstorm-io-personal-cloud-platform/contributions/new?perk_amt=4096&perk_id=2167019">Corporate Sponsors</a> who together contributed $16,384:</p>
+<ul>
+<li><a href="http://www.rogerwagner.com">Roger Wagner</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Audrey_Tang">Audrey Tang</a></li>
+</ul>
+<div><div style='float: left'><a href='https://www.draw.io'><img alt='draw.io' src='https://sandstorm.io/thirdparty/draw.io-logo.svg' style='height: 200px'/></a></div>
+<img alt='HumanWeb Networks' src='https://sandstorm.io/thirdparty/humanweb.png'/><br/>
+<a href='https://uniregistry.com'><img alt='Uniregistry' src='https://sandstorm.io/thirdparty/uniregistry.png' style='margin-left: 24px; margin-top: 28px'/></a></div><div style='clear: both'> </div>
+<p>Thank you all for your support!</p>
+<p>– Kenton, Jade, Jason, David, and Garply</p>
+<p>PS. If you want to help us a little more by clicking some things:</p>
+<ul>
+<li>Star <a href="https://github.com/sandstorm-io/sandstorm">Sandstorm on Github</a></li>
+<li>Follow <a href="https://twitter.com/SandstormIO">@SandstormIO on Twitter</a></li>
+<li>Follow <a href="https://google.com/+SandstormIO">Sandstorm.io on Google+</a></li>
+<li>Like <a href="https://facebook.com/sandstorm.io">Sandstorm.io on Facebook</a></li>
+<li>Subscribe to the <a href="https://blog.sandstorm.io">Sandstorm blog</a> using your favorite RSS feed reader</li>
+</ul>
+</section>
+<nav id="pagination">
+<a href="/page2/" title="Next Page">Older posts &raquo;</a>
+</nav>
+<footer>
+<p>This blog is hosted on Sandstorm using the
+<a href="https://sandstorm.io/apps">"Hacker CMS"</a> app.
+</footer>
+ 
+<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-42127409-1', 'blog.sandstorm.io');
+      ga('send', 'pageview');
+    </script>
+</body>
+</html>
