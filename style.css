@@ -1,1 +1,412 @@
-body{font-family:"Open Sans",sans-serif;font-weight:300;font-size:110%;line-height:1.5;color:black;margin:0;}h1,h2,h3{font-weight:600;}b{font-weight:600;}a{color:#428bca;font-weight:600;text-decoration:none;}a:hover{color:#0094ff;font-weight:600;text-decoration:none;}h1>a,h1>a:hover,h2>a,h2>a:hover{color:inherit;}svg{width:400px;height:300px;}.center-block{width:800px;margin:8px auto;}footer{text-align:center;font-style:italic;}nav{text-align:center;}header{background-image:url(https://sandstorm.io/sandcat-story-part1.svg);line-height:1;padding:44.5% 0 0;margin:0 0 170px;height:0;background-repeat:no-repeat;background-position:top center;}header h1{margin:0;font-size:4em;text-align:center;}header p{margin-top:0;margin-bottom:8px;font-size:1.2em;text-align:center;}header h2{font-size:2em;font-style:italic;font-weight:300;text-align:center;}section{overflow:hidden;padding:64px 0;}section>*,footer>*{width:800px;margin-left:auto;margin-right:auto;}blockquote{font-size:30px;font-style:italic;width:680px;margin:auto;line-height:1.2;font-weight:600;border-left:4px solid #f3ebe0;padding-left:16px;}a.crowdfunding{display:block;background-color:#eb1478;text-align:center;margin-top:32px;padding:16px;font-size:24pt;color:white;}a.crowdfunding:hover{text-decoration:underline;}iframe.youtube{width:560px;height:350px;}iframe.indiegogo{width:222px;height:445px;position:fixed;bottom:32px;right:16px;}@media screen and (max-width: 1310px) {iframe.indiegogo{position:static;float:right;margin-left:16px;}}@media screen and (max-width: 840px) {section>*,footer>*,blockquote{width:auto;margin-left:16px;margin-right:16px;}}section:nth-of-type(2n){background-color:#f4f4f4;}#logo{display:block;background-color:white;background-image:url(https://sandstorm.io/logo-bw.png);background-position:120% -20%;background-size:75% 75%;background-repeat:no-repeat;border-radius:50%;width:150px;height:150px;margin:-75px auto 0;padding:0;}.static-logo{background-image:url("logo.png");background-repeat:no-repeat;}.dynamic-logo{cursor:pointer;}h2{font-size:3em;}section>h2{margin-bottom:0;margin-top:0;}section>h3{font-size:1.5em;}@media screen and (max-width: 500px) {section img{width:100%;}}p.post-details{margin-top:0;font-size:85%;}span.caption{font-size:85%;font-style:italic;color:#888;}pre{color:#222;background-color:#fff;font-family:Monaco,"Bitstream Vera Sans Mono","Lucida Console",Terminal,monospace;font-size:14px;width:700px;padding:8px;box-shadow:0 0 10px rgba(0,0,0,.1);overflow:auto;margin:auto;border:1px solid #ccc;}@media screen and (max-width: 840px) {pre{width:calc(100% - 100px);}}.row,.row-wide{text-align:center;margin:0 auto;}@media screen and (max-width: 1700px) {.row{max-width:1100px;}}.column{padding:16px;display:inline-block;text-align:left;width:300px;vertical-align:top;}.row-wide>.column{width:400px;}.bigpill{width:800px;margin:32px auto;}.bigpill>h2:first-child{border-right:1px solid #a49f97;}.bigpill>h2:last-child{border-left:1px solid #a49f97;}.bigpill h2{margin:0;width:320px;padding:16px;display:inline-block;vertical-align:middle;}.bigpill p{margin:0;width:400px;padding:16px;display:inline-block;vertical-align:middle;}@media screen and (max-width: 800px) {.bigpill{width:auto;display:-ms-flexbox;display:-moz-box;display:-webkit-box;display:-webkit-flex;display:flex;flex-direction:column;}.bigpill h2{text-align:center;width:300px;margin:auto;display:block;border-bottom:1px solid #ba9;font-size:2.5em;}.bigpill p{width:300px;margin:auto;display:block;}.bigpill>h2:first-child{border-right:none;}.bigpill>h2:last-child{border-left:none;}.bigpill>p:first-child{-ms-flex-order:3;-moz-box-ordinal-group:3;-webkit-box-ordinal-group:3;-webkit-order:3;order:3;}h2{font-size:2em;}}@media screen and (max-width: 600px) {header h1{font-size:3em;}#logo{width:100px;height:100px;margin-top:-50px;}}#signup-form{padding:8px;max-width:430px;margin:32px auto;}#signup-form.glowing-border{box-shadow:0 0 10px #cf974a;}#signup-form h3{margin:8px 16px 8px;text-align:center;font-size:2.5em;line-height:1;}#signup-form p{margin-top:8px;margin-bottom:8px;font-size:1em;text-align:center;}#signup-form input[type="email"]{background-color:white;border:2px solid #a49f97;border-radius:4px;padding:4px;width:422px;font-size:120%;margin-bottom:8px;color:inherit;font-family:inherit;}#signup-form input[type="submit"]{font-family:inherit;background-color:#428bca;background-image:linear-gradient(to bottom,#428bca 0,#2d6ca2 100%);background-repeat:repeat-x;padding:10px 16px;font-size:200%;line-height:1.33;border-radius:6px;border:1px solid #2b669a;color:white;cursor:pointer;box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);}#apps{margin:16px;}.app{background-color:#eee;padding:16px;margin:32px;max-width:800px;border-radius:6px;}.app h3{font-size:2em;margin-top:0;}.app button{font-family:inherit;float:right;background-color:#428bca;background-image:linear-gradient(to bottom,#428bca 0,#2d6ca2 100%);background-repeat:repeat-x;padding:10px 16px;font-size:18px;line-height:1.33;border-radius:6px;border:1px solid #2b669a;color:white;cursor:pointer;box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);}header button{display:block;margin:0 auto;font-family:inherit;background-color:#428bca;background-image:linear-gradient(to bottom,#428bca 0,#2d6ca2 100%);background-repeat:repeat-x;padding:10px 16px;font-size:18px;line-height:1.33;border-radius:6px;border:1px solid #2b669a;color:white;cursor:pointer;box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);}a.link-button{font-family:inherit;background-color:#428bca;background-image:linear-gradient(to bottom,#428bca 0,#2d6ca2 100%);background-repeat:repeat-x;padding:10px 16px;font-size:18px;line-height:1.33;border-radius:6px;border:1px solid #2b669a;color:white;cursor:pointer;box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);}p.link-button-box{margin:32px 32px 32px 0;text-align:center;}.footer{text-align:center;}.nametag{width:450px;margin:8px auto;background-color:#f4f4f4;border-radius:8px;text-align:center;}.nametag img{display:inline-block;border-radius:50%;vertical-align:middle;width:120px;height:120px;}.nametag p{display:inline-block;vertical-align:middle;text-align:left;padding-left:32px;}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 110%;
+    line-height: 1.5;
+    color: black;
+    margin: 0;
+}
+h1, h2, h3 {
+    font-weight: 600;
+}
+b {
+    font-weight: 600;
+}
+a {
+    color: #428bca;
+    font-weight: 600;
+    text-decoration: none;
+}
+a:hover {
+    color: #0094ff;
+    font-weight: 600;
+    text-decoration: none;
+}
+h1>a, h1>a:hover, h2>a, h2>a:hover {
+    color: inherit;
+}
+svg {
+    width: 400px;
+    height: 300px;
+}
+.center-block {
+    width: 800px;
+    margin: 8px auto;
+}
+footer {
+    text-align: center;
+    font-style: italic;
+}
+nav {
+    text-align: center;
+}
+header {
+    background-image: url(https://sandstorm.io/sandcat-story-part1.svg);
+    line-height: 1;
+    padding: 44.5% 0 0;
+    margin: 0 0 170px;
+    height: 0;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+header h1 {
+    margin: 0;
+    font-size: 4em;
+    text-align: center;
+}
+header p {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.2em;
+    text-align: center;
+}
+header h2 {
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+}
+section {
+    overflow: hidden;
+    padding: 64px 0;
+}
+section>*, footer>* {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+blockquote {
+    font-size: 30px;
+    font-style: italic;
+    width: 680px;
+    margin: auto;
+    line-height: 1.2;
+    font-weight: 600;
+    border-left: 4px solid #f3ebe0;
+    padding-left: 16px;
+}
+a.crowdfunding {
+    display: block;
+    background-color: #eb1478;
+    text-align: center;
+    margin-top: 32px;
+    padding: 16px;
+    font-size: 24pt;
+    color: white;
+}
+a.crowdfunding:hover {
+    text-decoration: underline;
+}
+iframe.youtube {
+    width: 560px;
+    height: 350px;
+}
+iframe.indiegogo {
+    width: 222px;
+    height: 445px;
+    position: fixed;
+    bottom: 32px;
+    right: 16px;
+}
+@media screen and (max-width: 1310px)  {
+    iframe.indiegogo {
+    position: static;
+    float: right;
+    margin-left: 16px;
+}
+}
+@media screen and (max-width: 840px)  {
+    section>*, footer>*, blockquote {
+    width: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+}
+section:nth-of-type(2n) {
+    background-color: #f4f4f4;
+}
+#logo {
+    display: block;
+    background-color: white;
+    background-image: url(https://sandstorm.io/logo-bw.png);
+    background-position: 120% -20%;
+    background-size: 75% 75%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px auto 0;
+    padding: 0;
+}
+.static-logo {
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+}
+.dynamic-logo {
+    cursor: pointer;
+}
+h2 {
+    font-size: 3em;
+}
+section>h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+section>h3 {
+    font-size: 1.5em;
+}
+@media screen and (max-width: 500px)  {
+    section img {
+    width: 100%;
+}
+}
+p.post-details {
+    margin-top: 0;
+    font-size: 85%;
+}
+span.caption {
+    font-size: 85%;
+    font-style: italic;
+    color: #888;
+}
+pre {
+    color: #222;
+    background-color: #fff;
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    font-size: 14px;
+    width: 700px;
+    padding: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    overflow: auto;
+    margin: auto;
+    border: 1px solid #ccc;
+}
+@media screen and (max-width: 840px)  {
+    pre {
+    width: calc(100% - 100px);
+}
+}
+.row, .row-wide {
+    text-align: center;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1700px)  {
+    .row {
+    max-width: 1100px;
+}
+}
+.column {
+    padding: 16px;
+    display: inline-block;
+    text-align: left;
+    width: 300px;
+    vertical-align: top;
+}
+.row-wide>.column {
+    width: 400px;
+}
+.bigpill {
+    width: 800px;
+    margin: 32px auto;
+}
+.bigpill>h2:first-child {
+    border-right: 1px solid #a49f97;
+}
+.bigpill>h2:last-child {
+    border-left: 1px solid #a49f97;
+}
+.bigpill h2 {
+    margin: 0;
+    width: 320px;
+    padding: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.bigpill p {
+    margin: 0;
+    width: 400px;
+    padding: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+@media screen and (max-width: 800px)  {
+    .bigpill {
+    width: auto;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+.bigpill h2 {
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    display: block;
+    border-bottom: 1px solid #ba9;
+    font-size: 2.5em;
+}
+.bigpill p {
+    width: 300px;
+    margin: auto;
+    display: block;
+}
+.bigpill>h2:first-child {
+    border-right: none;
+}
+.bigpill>h2:last-child {
+    border-left: none;
+}
+.bigpill>p:first-child {
+    -ms-flex-order: 3;
+    -moz-box-ordinal-group: 3;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 3;
+    order: 3;
+}
+h2 {
+    font-size: 2em;
+}
+}
+@media screen and (max-width: 600px)  {
+    header h1 {
+    font-size: 3em;
+}
+#logo {
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+}
+}
+#signup-form {
+    padding: 8px;
+    max-width: 430px;
+    margin: 32px auto;
+}
+#signup-form.glowing-border {
+    box-shadow: 0 0 10px #cf974a;
+}
+#signup-form h3 {
+    margin: 8px 16px 8px;
+    text-align: center;
+    font-size: 2.5em;
+    line-height: 1;
+}
+#signup-form p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 1em;
+    text-align: center;
+}
+#signup-form input[type="email"] {
+    background-color: white;
+    border: 2px solid #a49f97;
+    border-radius: 4px;
+    padding: 4px;
+    width: 422px;
+    font-size: 120%;
+    margin-bottom: 8px;
+    color: inherit;
+    font-family: inherit;
+}
+#signup-form input[type="submit"] {
+    font-family: inherit;
+    background-color: #428bca;
+    background-image: linear-gradient(to bottom, #428bca 0, #2d6ca2 100%);
+    background-repeat: repeat-x;
+    padding: 10px 16px;
+    font-size: 200%;
+    line-height: 1.33;
+    border-radius: 6px;
+    border: 1px solid #2b669a;
+    color: white;
+    cursor: pointer;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+}
+#apps {
+    margin: 16px;
+}
+.app {
+    background-color: #eee;
+    padding: 16px;
+    margin: 32px;
+    max-width: 800px;
+    border-radius: 6px;
+}
+.app h3 {
+    font-size: 2em;
+    margin-top: 0;
+}
+.app button {
+    font-family: inherit;
+    float: right;
+    background-color: #428bca;
+    background-image: linear-gradient(to bottom, #428bca 0, #2d6ca2 100%);
+    background-repeat: repeat-x;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+    border: 1px solid #2b669a;
+    color: white;
+    cursor: pointer;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+}
+header button {
+    display: block;
+    margin: 0 auto;
+    font-family: inherit;
+    background-color: #428bca;
+    background-image: linear-gradient(to bottom, #428bca 0, #2d6ca2 100%);
+    background-repeat: repeat-x;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+    border: 1px solid #2b669a;
+    color: white;
+    cursor: pointer;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+}
+a.link-button {
+    font-family: inherit;
+    background-color: #428bca;
+    background-image: linear-gradient(to bottom, #428bca 0, #2d6ca2 100%);
+    background-repeat: repeat-x;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+    border: 1px solid #2b669a;
+    color: white;
+    cursor: pointer;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+}
+p.link-button-box {
+    margin: 32px 32px 32px 0;
+    text-align: center;
+}
+.footer {
+    text-align: center;
+}
+.nametag {
+    width: 450px;
+    margin: 8px auto;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    text-align: center;
+}
+.nametag img {
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    width: 120px;
+    height: 120px;
+}
+.nametag p {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 32px;
+}
