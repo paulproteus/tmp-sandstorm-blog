@@ -451,7 +451,11 @@ p.link-button-box {
     background-color: #ede4ed;
     color: #783189;
 }
-.padding-inner--sidebar {
+.padding-vert--sidebar {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.padding-horiz--sidebar {
 /*    padding-left: 10px; */
     padding-bottom: 10px;
     padding-top: 5px;
