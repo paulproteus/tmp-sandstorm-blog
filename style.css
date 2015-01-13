@@ -542,6 +542,15 @@ ul.social>li#twitter>a {
 ul.social>li#google-plus>a {
     background-image: url("https://sandstorm.io/images/google-plus.svg");
 }
+/* Extra social link classes for social categories
+   not currently on sandstorm.io */
+ul.social>li#github>a {
+    background-image: url("assets/gith_active50.svg");
+}
+ul.social>li#feed>a {
+    background-image: url("assets/rss_active50.svg");
+}
+
 ul.social>li>a {
     display: block;
     color: transparent;
