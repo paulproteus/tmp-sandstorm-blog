@@ -604,3 +604,15 @@ div.connect-with-us {
     position: relative;
     top: 70px;
 }
+/* Allow some A tags to opt out of the normal
+   link styling for this page. */
+.styles--inherit {
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+}
+.styles--inherit:hover {
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+}
