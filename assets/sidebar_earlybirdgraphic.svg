@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+<font horiz-adv-x="1000">
+<!-- Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries. -->
+<font-face font-family="SourceSansPro-Regular" units-per-em="1000" underline-position="-100" underline-thickness="50"/>
+<missing-glyph horiz-adv-x="653" d="M89,0l476,0l0,660l-476,0M154,110l0,462l127,-232M372,340l126,232l0,-462M197,58l74,132l54,103l4,0l52,-103l73,-132M325,387l-50,94l-66,119l235,0l-66,-119l-49,-94z"/>
+<glyph unicode="N" horiz-adv-x="642" d="M87,0l79,0l0,343C166,412 160,482 156,548l4,0l71,-135l237,-413l86,0l0,656l-79,0l0,-339C475,248 482,174 486,108l-4,0l-71,136l-238,412l-86,0z"/>
+<glyph unicode="P" horiz-adv-x="571" d="M87,0l84,0l0,260l118,0C432,260 531,325 531,463C531,607 434,656 289,656l-202,0M171,328l0,261l107,0C391,589 448,558 448,463C448,370 393,328 278,328z"/>
+<glyph unicode="d" horiz-adv-x="555" d="M47,242C47,80 126,-12 248,-12C305,-12 357,20 395,57l3,0l7,-57l68,0l0,712l-83,0l0,-187l4,-83C351,477 314,498 258,498C147,498 47,400 47,242M132,243C132,354 194,429 272,429C312,429 349,415 390,378l0,-254C350,79 311,57 266,57C181,57 132,127 132,243z"/>
+<glyph unicode="e" horiz-adv-x="496" d="M46,242C46,83 149,-12 279,-12C345,-12 397,11 439,38l-29,54C374,69 335,54 289,54C196,54 133,120 127,225l328,0C457,237 458,253 458,270C458,409 388,498 264,498C153,498 46,401 46,242M126,279C136,377 198,433 266,433C342,433 386,378 386,279z"/>
+<glyph unicode="-" horiz-adv-x="311" d="M41,219l230,0l0,63l-230,0z"/>
+<glyph unicode="o" horiz-adv-x="542" d="M46,242C46,81 152,-12 271,-12C390,-12 496,81 496,242C496,405 390,498 271,498C152,498 46,405 46,242M131,242C131,354 188,430 271,430C355,430 411,354 411,242C411,131 355,56 271,56C188,56 131,131 131,242z"/>
+<glyph unicode="r" horiz-adv-x="347" d="M82,0l82,0l0,312C197,394 246,424 287,424C307,424 318,421 334,416l16,72C334,495 319,498 298,498C243,498 193,459 160,398l-3,0l-7,88l-68,0z"/>
+<glyph unicode=" " horiz-adv-x="202"/>
+<glyph unicode="w" horiz-adv-x="718" d="M159,0l96,0l68,260C336,306 346,352 357,401l4,0C373,352 382,307 394,261l70,-261l100,0l130,486l-78,0l-71,-281C535,159 526,115 515,70l-4,0C500,115 489,159 477,205l-76,281l-80,0l-75,-281C234,160 224,115 213,70l-4,0C200,115 191,159 180,205l-72,281l-84,0z"/>
+</font>
+
+	<g>
+	<defs>
+		<rect id="SVGID_1_" x="0" y="0" width="300" height="300"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="150.0446" y1="295.9991" x2="150.0446" y2="-326.37">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="0" style="stop-color:#E8CE9A"/>
+		<stop  offset="0.1005" style="stop-color:#DC959C"/>
+		<stop  offset="0.2161" style="stop-color:#BD83A0"/>
+		<stop  offset="0.3964" style="stop-color:#8964A7"/>
+		<stop  offset="1" style="stop-color:#1A0F39"/>
+	</linearGradient>
+	<polyline style="clip-path:url(#SVGID_2_);fill:url(#SVGID_3_);" points="300,-326.4 300,296 0,296 0,-326.4 	"/>
+	
+		<radialGradient id="SVGID_4_" cx="149.173" cy="233.0979" r="207.4289" gradientTransform="matrix(1.0003 0 0 0.9214 -4.460403e-002 57.6279)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFED"/>
+		<stop  offset="0.291" style="stop-color:#FFD5D8;stop-opacity:0.709"/>
+		<stop  offset="0.7725" style="stop-color:#FF94B8;stop-opacity:0.2275"/>
+		<stop  offset="1" style="stop-color:#FF7BAC;stop-opacity:0"/>
+	</radialGradient>
+	<polygon style="clip-path:url(#SVGID_2_);fill:url(#SVGID_4_);" points="329.5,485.6 -31.2,485.6 -30.3,59.2 329.5,59.2 	"/>
+	<g style="clip-path:url(#SVGID_2_);">
+		
+			<text transform="matrix(1.0003 0 0 1 42.4328 132.6678)" style="fill:#FFFFFF; font-family:'SourceSansPro-Regular'; font-size:36.1017;">Pre-order Now</text>
+	</g>
+	
+		<line style="clip-path:url(#SVGID_2_);fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;" x1="75.9" y1="179.6" x2="232.2" y2="179.6"/>
+	<g style="clip-path:url(#SVGID_2_);">
+		<path style="fill:#F5DFF7;" d="M76.6,45.1h15.2c0,0-0.9,1.7-2.2,1.7c-1.3,0-11.1,0-11.1,0v10.5h11.1c0,0-0.5,1.7-1.9,1.7
+			s-9.3,0-9.3,0v12.2c0,0,10.2,0,11.3,0c1.7,0,2.4,1.7,2.4,1.7H76.6V45.1z"/>
+		<path style="fill:#F5DFF7;" d="M109.9,60.2c0.1-3.1-0.8-6.4-4.8-6.4c-2.7,0-5.6,2-6,2s-1.3-1.1-1.3-1.1c1.4-1,4.2-2.6,7.5-2.6
+			c4.8,0,6.4,3.5,6.4,7.8v13h-1.6l-0.2-2.6h-0.1c-2.1,1.6-4.5,3.1-7.2,3.1c-3.2,0-5.9-1.7-5.9-5.6C96.8,63.4,100.9,61.2,109.9,60.2z
+			 M103,71.8c2.3,0,4.4-1.1,6.9-3.3v-6.9c-8.3,1-11.1,2.9-11.1,6.1C98.7,70.7,100.7,71.8,103,71.8z"/>
+		<path style="fill:#F5DFF7;" d="M119,52.6h1.6l0.2,3.8h0.1c1.4-2.5,3.3-4.3,5.7-4.3c0.8,0,1.4,0.1,2,0.4l-0.4,1.7
+			c-0.7-0.3-1.1-0.3-1.9-0.3c-1.8,0-4,1.4-5.5,5.2v13.8H119V52.6z"/>
+		<path style="fill:#F5DFF7;" d="M132.4,42.6h1.9v27.9c0,0.9,0.4,1.3,0.9,1.3c0.2,0,0.3,0,0.8-0.1l0.3,1.5c-0.4,0.1-0.8,0.2-1.4,0.2
+			c-1.6,0-2.5-1-2.5-3.2V42.6z"/>
+		<path style="fill:#F5DFF7;" d="M141.6,80.4c2.5,0,4.2-2.3,5.2-5.4l0.5-1.8L139,52.6c0,0,1.9-0.4,2.4,0.9
+			c0.5,1.2,4.6,11.9,4.6,11.9c0.6,1.7,1.4,3.9,2.2,5.7h0.2c0.6-1.8,1.3-4,1.9-5.7c0,0,3.6-10.7,4-11.6c0.4-1,2.3-1.1,2.3-1.1
+			l-8,22.8c-1.1,3.4-3.2,6.7-6.8,6.7c-0.8,0-1.5-0.2-2.1-0.4l0.4-1.6C140.4,80.2,141,80.4,141.6,80.4z"/>
+		<path style="fill:#F5DFF7;" d="M169.3,45.1h7.5c5.6,0,9.2,2.1,9.2,6.8c0,2.9-1.6,5.2-4.9,6.1v0.2c4.1,0.6,6.7,2.9,6.7,6.7
+			c0,5.4-4.1,8.1-10.3,8.1h-8.1V45.1z M176,57.3c5.7,0,8-1.9,8-5.5c0-3.6-2.7-5.1-7.8-5.1h-5v10.6H176z M176.9,71.3
+			c5.5,0,8.9-2,8.9-6.5c0-4-3.3-5.9-8.9-5.9h-5.6v12.4H176.9z"/>
+		<path style="fill:#F5DFF7;" d="M192.6,46.1c0-1.1,0.8-1.7,1.7-1.7s1.7,0.6,1.7,1.7c0,1-0.8,1.6-1.7,1.6S192.6,47.1,192.6,46.1z
+			 M193.3,52.6h1.9v20.3h-1.9V52.6z"/>
+		<path style="fill:#F5DFF7;" d="M203,52.6h1.6l0.2,3.8h0.1c1.4-2.5,3.3-4.3,5.7-4.3c0.8,0,1.4,0.1,2,0.4l-0.4,1.7
+			c-0.7-0.3-1.1-0.3-1.9-0.3c-1.8,0-4,1.4-5.5,5.2v13.8H203V52.6z"/>
+		<path style="fill:#F5DFF7;" d="M223.3,52.1c2.4,0,4.1,0.9,6.1,2.5l-0.1-3.7v-8.4h1.9v30.3h-1.6l-0.2-2.6h-0.1
+			c-1.6,1.6-3.9,3.1-6.6,3.1c-5.1,0-8.4-3.8-8.4-10.6C214.3,56.3,218.4,52.1,223.3,52.1z M222.9,71.8c2.2,0,4.2-1.2,6.4-3.3v-12
+			c-2.2-1.9-3.9-2.6-5.9-2.6c-4.1,0-7.1,3.9-7.1,9C216.2,68.2,218.6,71.8,222.9,71.8z"/>
+	</g>
+	<ellipse style="clip-path:url(#SVGID_2_);fill:#FFFFE3;" cx="155.2" cy="282.3" rx="84.5" ry="65.1"/>
+	<rect x="0" y="294.4" style="clip-path:url(#SVGID_2_);fill:#FFFFFF;" width="300.4" height="31.6"/>
+	<polygon style="clip-path:url(#SVGID_2_);fill:#E1C7E2;" points="-2.1,286.6 -2.1,265.4 31,253.3 189,300.3 -2.1,300.3 	"/>
+	<polygon style="clip-path:url(#SVGID_2_);fill:#F5DFF7;" points="59.6,300.4 155,264.6 183.1,272.7 268.1,245.1 301.9,258 
+		301.9,300 	"/>
+</g>
+</svg>
