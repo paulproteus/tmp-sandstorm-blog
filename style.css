@@ -410,3 +410,166 @@ p.link-button-box {
     text-align: left;
     padding-left: 32px;
 }
+.sidebar {
+    width: 330px;
+    padding: 64px 0;
+    float: right;
+    margin-right: 230px;
+}
+.mailing-list {
+//    padding: 25px 25px;
+}
+.mailing-list .inputs {
+    /* 330px minus 20, for inner padding, = 310 */
+    width: 310px;
+    /* make sure to pad the left by 10px ourselves, to
+       adjust what text-align center means. */
+    padding-left: 10px;
+}
+.width--very-wide {
+    /* 330px minus 30+20, for input+padding, = 280px */
+    width: 275px;
+}
+.width--very-skinny {
+    width: 30px;
+}
+.mailing-list input[type="submit"] {
+    background-color: #e1c7e2;
+    color: #7e4784;
+    text-align: right;
+    border: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 30px;
+}
+.text-align--center {
+    text-align: center;
+}
+.bg--pale-purple {
+    background-color: #ede4ed;
+    color: #783189;
+}
+.padding-inner--sidebar {
+/*    padding-left: 10px; */
+    padding-bottom: 10px;
+    padding-top: 5px;    
+}
+.margin-top--sidebar {
+    margin-top: 17px;
+}
+.width--sidebar {
+    /* 330px in theory. 320px in practice due to
+       10px left padding. */
+    width: 330px;
+}
+.min-height--sidebar-square {
+    /* Some sidebar elements want to be nice and square. */
+    min-height: 330px;
+}
+a.button {
+    /* copy-pasta from main site style.css */
+    display: block;
+    background-color: #783189;
+    margin: 1em auto;
+    color: #fffbfb;
+    width: 310px;
+    padding: 4px 0;
+    border-radius: 10px;
+    font-size: 24pt;
+    text-decoration: none;
+    /* fighting our own styles */
+    font-weight: normal;
+}
+/* Color & font-weight mixins for the sidebar. */
+.color--deemphasized {
+    color: #ab75af;
+}
+.color--sunrise-white {
+    color: #f5dff7;
+}
+.font-weight--pale {
+    font-weight: lighter;
+}
+.font-weight--bold {
+    font-weight: bold;
+}
+.margin-bottom--none {
+    margin-bottom: 0;
+}
+.margin-top--none {
+    margin-top: 0;
+}
+.text-decoration--underline {
+    text-decoration: underline;
+}
+/* Background mixins for the sidebar. */
+.bg--sandstorm-grid {
+    background-image: url("https://sandstorm.io/logo-bw.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg--sunrise {
+    background-image: url("https://sandstorm.io/images/sandcat-bg.svg");
+    background-size: 2868px 484px;
+    background-position: 80% 80%;
+}
+.bg--personal-sandcat {
+    background-image: url("https://sandstorm.io/images/individual.svg");
+    background-size: 120px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+/* Standard sizes for the sidebar */
+.font-size--minimized {
+    font-size: 80%;
+}
+.font-size--large {
+    font-size: 175%;
+}
+.font-size--enormous {
+    font-size: 225%;
+}
+/* Social link classes from main site style.css */
+ul.social>li#facebook>a {
+    background-image: url("https://sandstorm.io/images/facebook.svg");
+}
+ul.social>li#twitter>a {
+    background-image: url("https://sandstorm.io/images/twitter.svg");
+}
+ul.social>li#google-plus>a {
+    background-image: url("https://sandstorm.io/images/google-plus.svg");
+}
+ul.social>li>a {
+    display: block;
+    color: transparent;
+    width: 42px;
+    height: 42px;
+    background-color: #ffd4ec;
+    overflow: hidden;
+    border-radius: 50%;
+}
+/* Customizations to social link classes */
+ul.social {
+    width:200px;
+    left: 80px;
+    position: relative;
+    text-align: right;
+}
+ul.social>li {
+    display:inline-block;
+    margin-right: 14px;
+}
+ul.social>li>a {
+    display: inline-block;
+}
+div.connect-with-us {
+    background-color: #783189;
+    color: #fffbfb;
+    font-size: 24pt;
+    text-decoration: none;
+    /* fighting our own styles */
+    font-weight: normal;
+
+}
