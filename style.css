@@ -516,8 +516,9 @@ a.button {
     background-position: 80% 80%;
 }
 .bg--personal-sandcat {
-    background-image: url("https://sandstorm.io/images/individual.svg");
-    background-size: 120px;
+    height: 160px;
+    background-image: url("/assets/sidebar_sandcat.svg");
+    background-size: auto 160px;
     background-position: 0 0;
     background-repeat: no-repeat;
 }
@@ -571,5 +572,14 @@ div.connect-with-us {
     text-decoration: none;
     /* fighting our own styles */
     font-weight: normal;
+
+}
+/* Position these rows of social buttons so that they
+   are right on top of each other (by giving them the
+   same class) and that the one at the bottom is pinned
+   to the bottom of its container. */
+.social-row {
+    position: relative;
+    top: 60px;
 
 }
