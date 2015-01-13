@@ -468,7 +468,7 @@ p.link-button-box {
 }
 .min-height--sidebar-square {
     /* Some sidebar elements want to be nice and square. */
-    min-height: 330px;
+    min-height: 315px;
 }
 a.button {
     /* copy-pasta from main site style.css */
@@ -489,8 +489,11 @@ a.button {
 .color--deemphasized {
     color: #ab75af;
 }
-.color--sunrise-white {
+.color--sunrise-pale {
     color: #f5dff7;
+}
+.color--sunrise-white {
+    color: #ffffff;
 }
 .font-weight--pale {
     font-weight: lighter;
@@ -516,9 +519,7 @@ a.button {
     height: 372px;
 }
 .bg--sunrise {
-    background-image: url("https://sandstorm.io/images/sandcat-bg.svg");
-    background-size: 2868px 484px;
-    background-position: 80% 80%;
+    background-image: url("assets/sidebar_earlybirdgraphic.svg");
 }
 .bg--personal-sandcat {
     height: 160px;
