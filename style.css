@@ -454,15 +454,17 @@ p.link-button-box {
 .padding-inner--sidebar {
 /*    padding-left: 10px; */
     padding-bottom: 10px;
-    padding-top: 5px;    
+    padding-top: 5px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 .margin-top--sidebar {
     margin-top: 17px;
 }
 .width--sidebar {
-    /* 330px in theory. 320px in practice due to
-       10px left padding. */
-    width: 330px;
+    /* 330px in theory. 280px in practice due to
+       50px total padding. */
+    width: 280px;
 }
 .min-height--sidebar-square {
     /* Some sidebar elements want to be nice and square. */
@@ -472,9 +474,10 @@ a.button {
     /* copy-pasta from main site style.css */
     display: block;
     background-color: #783189;
-    margin: 1em auto;
     color: #fffbfb;
-    width: 310px;
+    /* 100% is everything minus the padding, so this
+       is what we want. */
+    width: 100%;
     padding: 4px 0;
     border-radius: 10px;
     font-size: 24pt;
@@ -506,9 +509,11 @@ a.button {
 }
 /* Background mixins for the sidebar. */
 .bg--sandstorm-grid {
-    background-image: url("https://sandstorm.io/logo-bw.png");
+    background-image: url("assets/sidebar_servergraphic.svg");
+    background-size: 400px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
+    height: 372px;
 }
 .bg--sunrise {
     background-image: url("https://sandstorm.io/images/sandcat-bg.svg");
@@ -527,7 +532,7 @@ a.button {
     font-size: 80%;
 }
 .font-size--large {
-    font-size: 175%;
+    font-size: 160%;
 }
 .font-size--enormous {
     font-size: 225%;
@@ -591,4 +596,10 @@ div.connect-with-us {
     position: relative;
     top: 60px;
 
+}
+/* Similar rows for the demo box, but
+   45px between them. */
+.demo-row {
+    position: relative;
+    top: 70px;
 }
