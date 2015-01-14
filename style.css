@@ -416,19 +416,11 @@ p.link-button-box {
     float: right;
     margin-right: 230px;
 }
-.mailing-list {
-//    padding: 25px 25px;
-}
-.mailing-list .inputs {
-    /* 330px minus 20, for inner padding, = 310 */
-    width: 310px;
-    /* make sure to pad the left by 10px ourselves, to
-       adjust what text-align center means. */
-    padding-left: 10px;
-}
 .width--very-wide {
-    /* 330px minus 30+20, for input+padding, = 280px */
-    width: 275px;
+    /* 330px minus 50 for padding = 280.
+       280 minus 30 for the checkbox is 250.
+       But now it's 240, and I really don't remember why. */
+    width: 240px;
 }
 .width--very-skinny {
     width: 30px;
@@ -498,6 +490,9 @@ a.button {
 }
 .color--sunrise-white {
     color: #ffffff;
+}
+.color--checkbox-purple {
+    background-color: #e1c7e2;
 }
 .font-weight--pale {
     font-weight: lighter;
@@ -620,3 +615,16 @@ div.connect-with-us {
     font-weight: inherit;
     text-decoration: inherit;
 }
+/* Special styles, mostly copy-pasted from sandstorm.io,
+   for our sign-up inputs. */
+input.sign-up {
+    font-size: 14pt;
+￼    padding: 0 8px;
+￼    height: 32px;
+   ￼ border: none;
+}
+input.sign-up[type="submit"] {
+    background-color: #e1c7e2;
+    color: #ae72b1;
+    ￼border: none;
+￼}
