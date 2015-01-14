@@ -69,6 +69,7 @@ header h2 {
 section {
     overflow: hidden;
     padding: 64px 0;
+    text-align: center;
 }
 section>*, footer>* {
     width: 800px;
@@ -411,10 +412,30 @@ p.link-button-box {
     padding-left: 32px;
 }
 .sidebar {
-    width: 330px;
-    padding: 64px 0;
-    float: right;
-    margin-right: 230px;
+    min-width: 330px;
+    width: 25%;
+    display: inline-block;
+}
+.post {
+    /*
+    the top: declaration here, and the position: relative;
+    for .post and .sidebar are just hacks to work around
+    the fact that the post is positioned lower on the page
+    than I would guess.
+    
+    I can't seem to find any margin or padding causing this,
+    which makes me surprised.
+    */
+    
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+    /*
+    Arbitrary amount, but importantly non-zero, padding,
+    to avoid the post running right into the sidebar on
+    not-very-wide screens. */
+    
+    /* margin-right: 25px; */
 }
 .width--very-wide {
     /* 330px minus 50 for padding = 280.
