@@ -639,3 +639,26 @@ we create a block with a width of its own. */
     margin-left: auto;
     margin-right: auto;
 }
+/* Shrink blog post width when screen starts
+   to get small. */
+@media screen and (max-width: 1000px) {
+    .post-and-sidebar-container {
+        width: 100%;
+    }
+    section {
+        width: 60%;
+    }
+}
+/* Remove sidebar when the screen is too small. */
+@media screen and (max-width: 840px)  {
+    .sidebar {
+        display: none;
+    }
+    .post-and-sidebar-container {
+        width: 100%;
+    }
+    section {
+        width: 100%;
+    }
+}
+}

@@ -2,10 +2,6 @@
 
 * Ensure "Learn More" goes to the right place
 
-* Adjust blog post width so that it shrinks as needed for responsiveness
-
-* Adjust sidebar so it goes away when responsive design vaguely suggests it should
-
 * Ask what kind of other hover properties should work
 
 * Micro pixel fix the "Try the demo" box
