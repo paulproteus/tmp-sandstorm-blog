@@ -67,11 +67,15 @@ header h2 {
     text-align: center;
 }
 section {
+    /* On wide screens, we assume a total
+    width of 1000px. The sidebar is 330px,
+    so here, we set ourselves to 600px,
+    which amounts to allowing some margin. */
     overflow: hidden;
     padding: 64px 0;
+    width: 600px;
 }
 section>*, footer>* {
-    width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -414,7 +418,6 @@ p.link-button-box {
     width: 330px;
     padding: 64px 0;
     float: right;
-    margin-right: 230px;
 }
 .width--very-wide {
     /* 330px minus 50 for padding = 280.
@@ -628,3 +631,11 @@ input.sign-up[type="submit"] {
     color: #ae72b1;
     ￼border: none;
 ￼}
+/*
+To contain the post as well as the sidebar,
+we create a block with a width of its own. */
+.post-and-sidebar-container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
