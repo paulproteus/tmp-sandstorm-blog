@@ -81,12 +81,16 @@ header h2 {
 }
 
 section {
+    /* On wide screens, we assume a total
+    width of 1000px. The sidebar is 330px,
+    so here, we set ourselves to 600px,
+    which amounts to allowing some margin. */
   overflow: hidden;
   padding: 64px 0;
+    width: 600px;
 }
 
 section>*, footer>* {
-  width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -496,4 +500,250 @@ p.link-button-box {
   vertical-align: middle;
   text-align: left;
   padding-left: 32px;
+}
+.sidebar {
+    width: 330px;
+    padding: 64px 0;
+    float: right;
+}
+.width--very-wide {
+    /* 330px minus 50 for padding = 280.
+       280 minus 30 for the checkbox is 250.
+       But now it's 240, and I really don't remember why. */
+    width: 240px;
+}
+.width--very-skinny {
+    width: 30px;
+}
+.mailing-list input[type="submit"] {
+    background-color: #e1c7e2;
+    color: #7e4784;
+    text-align: right;
+    border: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 30px;
+}
+.text-align--center {
+    text-align: center;
+}
+.bg--pale-purple {
+    background-color: #ede4ed;
+    color: #783189;
+}
+.padding-vert--sidebar {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.padding-horiz--sidebar {
+/*    padding-left: 10px; */
+    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.margin-top--sidebar {
+    margin-top: 17px;
+}
+.width--sidebar {
+    /* 330px in theory. 280px in practice due to
+       50px total padding. */
+    width: 280px;
+}
+.min-height--sidebar-square {
+    /* Some sidebar elements want to be nice and square. */
+    min-height: 315px;
+}
+a.button {
+    /* copy-pasta from main site style.css */
+    display: block;
+    background-color: #783189;
+    color: #fffbfb;
+    /* 100% is everything minus the padding, so this
+       is what we want. */
+    width: 100%;
+    padding: 4px 0;
+    border-radius: 10px;
+    font-size: 24pt;
+    text-decoration: none;
+    /* fighting our own styles */
+    font-weight: normal;
+}
+/* Color & font-weight mixins for the sidebar. */
+.color--deemphasized {
+    color: #ab75af;
+}
+.color--sunrise-pale {
+    color: #f5dff7;
+}
+.color--sunrise-white {
+    color: #ffffff;
+}
+.color--checkbox-purple {
+    background-color: #e1c7e2;
+}
+.font-weight--pale {
+    font-weight: lighter;
+}
+.font-weight--bold {
+    font-weight: bold;
+}
+.margin-bottom--none {
+    margin-bottom: 0;
+}
+.margin-top--none {
+    margin-top: 0;
+}
+.text-decoration--underline {
+    text-decoration: underline;
+}
+/* Background mixins for the sidebar. */
+.bg--sandstorm-grid {
+    background-image: url("assets/sidebar_servergraphic.svg");
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 372px;
+}
+.bg--sunrise {
+    background-image: url("assets/sidebar_earlybirdgraphic.svg");
+}
+.bg--personal-sandcat {
+    height: 160px;
+    background-image: url("/assets/sidebar_sandcat.svg");
+    background-size: auto 160px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+/* Standard sizes for the sidebar */
+.font-size--minimized {
+    font-size: 80%;
+}
+.font-size--large {
+    font-size: 160%;
+}
+.font-size--enormous {
+    font-size: 225%;
+}
+/* Social link classes from main site style.css */
+ul.social>li#facebook>a {
+    background-image: url("https://sandstorm.io/images/facebook.svg");
+}
+ul.social>li#twitter>a {
+    background-image: url("https://sandstorm.io/images/twitter.svg");
+}
+ul.social>li#google-plus>a {
+    background-image: url("https://sandstorm.io/images/google-plus.svg");
+}
+/* Extra social link classes for social categories
+   not currently on sandstorm.io */
+ul.social>li#github>a {
+    background-image: url("assets/gith_active50.svg");
+}
+ul.social>li#feed>a {
+    background-image: url("assets/rss_active50.svg");
+}
+
+ul.social>li>a {
+    display: block;
+    color: transparent;
+    width: 42px;
+    height: 42px;
+    background-color: #ffd4ec;
+    overflow: hidden;
+    border-radius: 50%;
+}
+/* Customizations to social link classes */
+ul.social {
+    width:200px;
+    left: 80px;
+    position: relative;
+    text-align: right;
+}
+ul.social>li {
+    display:inline-block;
+    margin-right: 14px;
+}
+ul.social>li>a {
+    display: inline-block;
+}
+div.connect-with-us {
+    background-color: #783189;
+    color: #fffbfb;
+    font-size: 24pt;
+    text-decoration: none;
+    /* fighting our own styles */
+    font-weight: normal;
+
+}
+/* Position these rows of social buttons so that they
+   are right on top of each other (by giving them the
+   same class) and that the one at the bottom is pinned
+   to the bottom of its container. */
+.social-row {
+    top: 60px;
+}
+/* Similar rows for the demo box, but
+   45px between them. */
+.demo-row {
+    position: relative;
+    top: 70px;
+}
+/* Allow some A tags to opt out of the normal
+   link styling for this page. */
+.styles--inherit {
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+}
+.styles--inherit:hover {
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+}
+/* Special styles, mostly copy-pasted from sandstorm.io,
+   for our sign-up inputs. */
+input.sign-up {
+    font-size: 14pt;
+￼    padding: 0 8px;
+￼    height: 32px;
+   ￼ border: none;
+}
+input.sign-up[type="submit"] {
+    background-color: #e1c7e2;
+    color: #ae72b1;
+    ￼border: none;
+￼}
+/*
+To contain the post as well as the sidebar,
+we create a block with a width of its own. */
+.post-and-sidebar-container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Shrink blog post width when screen starts
+   to get small. */
+@media screen and (max-width: 1000px) {
+    .post-and-sidebar-container {
+        width: 100%;
+    }
+    section {
+        width: 60%;
+    }
+}
+/* Remove sidebar when the screen is too small. */
+@media screen and (max-width: 840px)  {
+    .sidebar {
+        display: none;
+    }
+    .post-and-sidebar-container {
+        width: 100%;
+    }
+    section {
+        width: 100%;
+    }
+}
 }
